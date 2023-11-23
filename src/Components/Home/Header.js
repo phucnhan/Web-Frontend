@@ -1,23 +1,26 @@
 import React from "react";
-import ".Header.css"
-class Header extends React.Component {
-    render() {
-        return (
-            <div class="company-logo">D</div>
-            <nav class="navbar">
-              <ul class="nav-items">
-                <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">OFFER</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-              </ul>
-            </nav>
-            <div class="menu-toggle">
-              <i class="bx bx-menu"></i>
-              <i class="bx bx-x"></i>
-            </div>
-        )
-    }
+import "./Header.css";
 
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="company-logo">D</div>
+        <nav className="navbar">
+          <ul className="nav-items">
+            <li className="nav-item"><button className="nav-link">HOME</button></li>
+            <li className="nav-item"><button className="nav-link">OFFER</button></li>
+            <li className="nav-item"><button className="nav-link">SHOP</button></li>
+            <li className="nav-item"><button className="nav-link">CONTACT</button></li>
+          </ul>
+        </nav>
+        <div className="menu-toggle">
+          <i className="bx bx-menu"></i>
+          <i className="bx bx-x"></i>
+        </div>
+      </div>
+    );
+  }
 }
+
 export default Header;
