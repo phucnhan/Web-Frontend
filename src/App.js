@@ -1,15 +1,11 @@
 import React from 'react';
-import Navbar from './Components/Home/Navbar';
-import Footer from './Components/Home/Footer'
+import Shop from './Components/Home/Shop';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Navbar />
+      <header className="App-home">
+        <Shop />
       </header>
-      <footer className="App-footer">
-        <Footer />
-      </footer>
     </div>
   );
 }
