@@ -1,43 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <header>
+    <div class="company-logo">D</div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">OFFER</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+  <main>
+    <!-- HOME SECTION -->
+    <section class="container section-1">
+      <div class="slogan">
+        <h1 class="company-title">DOWNTOWN TECH LIVER</h1>
+        <h2 class="company-slogan">
+          The biggest computer shop in the area where customers come first.
+        </h2>
+      </div>
+      <div class="home-computer-container">
+        <img class="home-computer" src="stories\virtuemart\category\resized\blog-thumb3.jpg"
+          alt="a computer in dark with shadow" class="home-img">
+      </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+    <!-- OFFER SECTION -->
+    <section class="container section-2">
+      <!-- offer 1 -->
+      <div class="offer offer-1">
+        <img src="stories/virtuemart/category/image_category_2.png" alt="a computer in dark with with white shadow"
+          class="offer-img offer-1-img">
+        <div class="offer-description offer-desc-1">
+          <h2 class="offer-title">Macbook pro</h2>
+          <p class="offer-hook">This a Macbook pro nulla vulputate magna vel odio sagittis bibendium...</p>
+          <div class="cart-btn">ADD TO CART</div>
+        </div>
+      </div>
+      <!-- offer 2 -->
+      <div class="offer offer-2">
+        <img src="stories/virtuemart/category/image_category_3.png" alt="a opened computer"
+          class="offer-img offer-2-img">
+        <div class="offer-description offer-desc-2">
+          <h2 class="offer-title">Lenovo</h2>
+          <p class="offer-hook">This a Lenovo nulla vulputate magna vel odio sagittis bibendium...</p>
+          <div class="cart-btn">ADD TO CART</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section class="container section-3">
+      <!-- product - 1 -->
+      <div class="product product-1">
+        <img src="stories/virtuemart/category/image_category_4.png" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 2 -->
+      <div class="product product-2">
+        <img src="stories/virtuemart/category/image_category_5.png" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 3 -->
+      <div class="product product-3">
+        <img src="stories/virtuemart/category/image_category_6.png" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 4 -->
+      <div class="product product-4">
+        <img src="stories/virtuemart/category/image_category_7.png" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+    </section>
+
+    <!-- SPONSOR SECTION -->
+    <section class="container section-4">
+      <!-- SPONSOR group 1 -->
+      <div class="sponsor sponsor-1"><img
+          src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/microsoft.svg"
+          alt=""></div>
+      <div class="sponsor sponsor-2"><img
+          src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/apple.svg"
+          alt=""></div>
+
+      <!-- SPONSOR group 2 -->
+      <div class="sponsor sponsor-3"><img
+          src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/dell.svg"
+          alt=""></div>
+      <div class="sponsor sponsor-4"><img
+          src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/ibm.svg"
+          alt=""></div>
+    </section>
+
+    <!-- SUBSCRIBE SECTION-->
+    <section class="container section-5">
+      <h2 class="subscribe-input-label">NEWSLETTER</h2>
+      <div class="subscribe-container">
+        <input type="text" id="email-subscribe" placeholder="Email address...">
+        <input type="submit" value="SUBSCRIBE">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container top-footer">
+      <!-- footer item 1 -->
+      <div class="footer-item">
+        <h2 class="footer-title">ADDRESS</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing st18</h3>
+        </div>
+      </div>
+      <!-- footer item 2 -->
+      <div class="footer-item">
+        <h2 class="footer-title">SERVICES</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+        </div>
+      </div>
+      <!-- footer item 3 -->
+      <div class="footer-item">
+        <h2 class="footer-title">SUPPLIERS</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+        </div>
+      </div>
+      <!-- footer item 4 -->
+      <div class="footer-item">
+        <h2 class="footer-title">INVESTMENT</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container end-footer">
+      <div class="copyright">copyright © 2021 - Present • <b>DOWNTOWN TECH LIVER</b></div>
+      <a class="designer" href="#">Thierry M</a>
+    </div>
+  </footer>
+</body>
