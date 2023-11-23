@@ -1,90 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ================= VARIABLE ================ */
+:root {
+  --primary-color: hsl(9, 94%, 61%);
+  --primary-color-alt: hsl(28, 72%, 83%);
+  --second-color: #3e537c;
+  --second-color-alt: hsla(220, 33%, 36%, 65%);
+  --third-color: hsl(220, 36%, 28%);
+  --white-color: #fbfbfb;
+  --white-color-alt: hsl(12, 14%, 93%);
+  --dark-color: hsl(300, 100%, 0%);
+}
+
+/* =============== FOOTER =============== */
 .top-footer {
-    background-color: var(--second-color);
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-title {
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 1rem 0;
-    background-image: -webkit-linear-gradient(
-      120deg,
-      var(--primary-color-alt),
-      var(--primary-color)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .footer-items h3 {
-    cursor: pointer;
-    font-weight: 300;
-    font-size: 1.1rem;
-    padding: 0.1rem 0;
-    color: var(--white-color-alt);
-  }
-  .footer-items h3:hover {
-    text-decoration: underline;
-  }
-  .footer-items h3:last-child {
-    padding-bottom: 2rem;
-  }
-  
-  .end-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--third-color);
-  }
-  .copyright {
-    color: var(--white-color-alt);
-    padding: 1rem 0;
-    font-size: 0.9rem;
-  }
-  .copyright b {
-    font-weight: inherit;
-    font-size: 0.9rem;
-  }
-  .designer {
-    color: hsla(0, 0%, 98%, 0.541);
-    padding-bottom: 0.5rem;
-    font-size: 0.9rem;
-  }
-  .designer:hover {
-    text-decoration: underline;
-  }
-  .top-footer {
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 8rem;
-    padding-top: 2rem;
-  }
-  .footer-title {
-    font-size: 1rem;
-    padding: 1rem 0;
-  }
-  .footer-items h3 {
-    font-size: 0.9rem;
-  }
+  background-color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  background-image: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-items h3 {
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 0.1rem 0;
+  color: var(--white-color-alt);
+}
+.footer-items h3:hover {
+  text-decoration: underline;
+}
+.footer-items h3:last-child {
+  padding-bottom: 2rem;
+}
 
-  .end-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--third-color);
-  }
-  .copyright {
-    color: hsla(0, 0%, 98%, 0.747);
-    padding: 1rem 0;
-    font-size: 0.8rem;
-  }
-  .copyright b {
-    font-size: 0.7rem;
-  }
-  .designer {
-    color: hsla(0, 0%, 98%, 0.322);
-    font-size: 0.8rem;
-  }
+.end-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+}
+.copyright {
+  color: var(--white-color-alt);
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+.copyright b {
+  font-weight: inherit;
+  font-size: 0.9rem;
+}
+.designer {
+  color: hsla(0, 0%, 98%, 0.541);
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.designer:hover {
+  text-decoration: underline;
+}
+/* =============== FOOTER =============== */
+.top-footer {
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+}
+.footer-title {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+.footer-items h3 {
+  font-size: 0.9rem;
+}
+
+.end-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+}
+.copyright {
+  color: hsla(0, 0%, 98%, 0.747);
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+.copyright b {
+  font-size: 0.7rem;
+}
+.designer {
+  color: hsla(0, 0%, 98%, 0.322);
+  font-size: 0.8rem;
+}
