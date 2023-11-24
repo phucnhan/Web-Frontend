@@ -90,6 +90,9 @@ body {
 .offer img {
   background-color: var(--dark-color);
   padding: 2rem 0;
+  width: 50%;
+  height: auto;
+  margin: auto;
 }
 .offer-1 img {
   background-color: var(--dark-color);
@@ -184,7 +187,7 @@ body {
 }
 .sponsor img {
   cursor: pointer;
-  width: 40px;
+  width: 60px;
   height: 40px;
   filter: grayscale(100%);
   opacity: 0.8;
@@ -271,6 +274,7 @@ input[type="submit"]:hover {
 }
 .offer-1 {
   grid-template-areas: "offer-1-img offer-desc-1";
+  
 }
 .offer-1 img {
   background-color: var(--dark-color);

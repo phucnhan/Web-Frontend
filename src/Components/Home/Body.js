@@ -12,11 +12,11 @@ class Body extends React.Component {
                             The biggest computer shop in the area where customers come first.
                         </h2>
                     </div>
-                    <div className="home-computer-container">
+                    <div className="home-watch-container">
                         <img
-                            className="home-computer"
+                            className="home-watch"
                             src="stories/virtuemart/category/resized/blog-thumb3.jpg"
-                            alt="a computer in dark with shadow"
+                            alt="a watch in dark with shadow"
                         />
                     </div>
                 </section>
@@ -65,16 +65,16 @@ class Body extends React.Component {
 
                 <section className="container section-4">
                     <div className="sponsor sponsor-1">
-                        <img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/microsoft.svg" alt="" />
+                        <img src="public\stories\virtuemart\manufacturer\brand_1.png" alt="" />
                     </div>
                     <div className="sponsor sponsor-2">
-                        <img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/apple.svg" alt="" />
+                        <img src="public\stories\virtuemart\manufacturer\brand_2.png" alt="" />
                     </div>
                     <div className="sponsor sponsor-3">
-                        <img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/dell.svg" alt="" />
+                        <img src="public\stories\virtuemart\manufacturer\brand_3.png" alt="" />
                     </div>
                     <div className="sponsor sponsor-4">
-                        <img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/ibm.svg" alt="" />
+                        <img src="public\stories\virtuemart\manufacturer\brand_4.png" alt="" />
                     </div>
                 </section>
 
