@@ -51,7 +51,10 @@ body {
   background-color: var(--dark-color);
   display: grid;
 }
-/* .home-computer-container {} */
+.home-watch-container {
+  width: 100%;
+  height: 110%;
+}
 
 .slogan .company-title {
   background: -webkit-linear-gradient(
