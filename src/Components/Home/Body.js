@@ -9,7 +9,7 @@ class Body extends React.Component {
                     <div className="slogan">
                         <h1 className="company-title">WATCH HAVEN DOWNTOWN</h1>
                         <h2 className="company-slogan">
-                        The premier watch destination in the area, where timepieces take center stage. Our commitment is to prioritize customers and provide an unparalleled shopping experience where time matters most.spo
+                            The premier watch destination in the area, where timepieces take center stage. Our commitment is to prioritize customers and provide an unparalleled shopping experience where time matters most.spo
                         </h2>
                     </div>
                     <div className="home-watch-container">
@@ -65,16 +65,16 @@ class Body extends React.Component {
 
                 <section className="container section-4">
                     <div className="sponsor sponsor-1">
-                        <img src="public\stories\virtuemart\manufacturer\resized\Rolex.svg" alt="" />
+                        <img src="stories/virtuemart/manufacturer/brand_1.png" alt="" />
                     </div>
                     <div className="sponsor sponsor-2">
-                        <img src="public\stories\virtuemart\manufacturer\brand_2.png" alt="" />
+                        <img src="stories/virtuemart/manufacturer/brand_2.png" alt="" />
                     </div>
                     <div className="sponsor sponsor-3">
-                        <img src="public\stories\virtuemart\manufacturer\brand_3.png" alt="" />
+                        <img src="stories/virtuemart/manufacturer/brand_3.png" alt="" />
                     </div>
                     <div className="sponsor sponsor-4">
-                        <img src="public\stories\virtuemart\manufacturer\brand_4.png" alt="" />
+                        <img src="stories/virtuemart/manufacturer/brand_4.png" alt="" />
                     </div>
                 </section>
 
