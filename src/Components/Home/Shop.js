@@ -16,5 +16,5 @@ class Shop extends React.Component {
         );
     }
 }
-
+A
 export default Shop;
