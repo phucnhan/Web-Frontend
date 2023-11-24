@@ -7,9 +7,9 @@ class Body extends React.Component {
             <div>
                 <section className="container section-1">
                     <div className="slogan">
-                        <h1 className="company-title">DOWNTOWN TECH LIVER</h1>
+                        <h1 className="company-title">WATCH HAVEN DOWNTOWN</h1>
                         <h2 className="company-slogan">
-                            The biggest computer shop in the area where customers come first.
+                        The premier watch destination in the area, where timepieces take center stage. Our commitment is to prioritize customers and provide an unparalleled shopping experience where time matters most.spo
                         </h2>
                     </div>
                     <div className="home-watch-container">
@@ -25,8 +25,8 @@ class Body extends React.Component {
                     <div className="offer offer-1">
                         <img src="stories/virtuemart/category/image_category_2.png" alt="a computer in dark with white shadow" className="offer-img offer-1-img" />
                         <div className="offer-description offer-desc-1">
-                            <h2 className="offer-title">Macbook pro</h2>
-                            <p className="offer-hook">This is a Macbook pro. Nulla vulputate magna vel odio sagittis bibendium...</p>
+                            <h2 className="offer-title">Anne Klein</h2>
+                            <p className="offer-hook">Rose Gold-Tone Watch with Swarovski Crystals and Leather Band...</p>
                             <div className="cart-btn">ADD TO CART</div>
                         </div>
                     </div>
@@ -34,8 +34,8 @@ class Body extends React.Component {
                     <div className="offer offer-2">
                         <img src="stories/virtuemart/category/image_category_3.png" alt="an opened computer" className="offer-img offer-2-img" />
                         <div className="offer-description offer-desc-2">
-                            <h2 className="offer-title">Lenovo</h2>
-                            <p className="offer-hook">This is a Lenovo. Nulla vulputate magna vel odio sagittis bibendium...</p>
+                            <h2 className="offer-title">Bestdon</h2>
+                            <p className="offer-hook">Bestdon Swiss Men's Sports Watch Digital Multifuction Display Time Yellow...</p>
                             <div className="cart-btn">ADD TO CART</div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ class Body extends React.Component {
 
                 <section className="container section-4">
                     <div className="sponsor sponsor-1">
-                        <img src="public\stories\virtuemart\manufacturer\brand_1.png" alt="" />
+                        <img src="public\stories\virtuemart\manufacturer\resized\Rolex.svg" alt="" />
                     </div>
                     <div className="sponsor sponsor-2">
                         <img src="public\stories\virtuemart\manufacturer\brand_2.png" alt="" />
