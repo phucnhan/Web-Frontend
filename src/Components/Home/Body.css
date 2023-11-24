@@ -35,7 +35,7 @@ img {
 .bx {
   font-size: 2.5rem;
 }
-.container {
+.body-container {
   padding: 0 2rem;
 }
 
@@ -51,7 +51,7 @@ body {
   background-color: var(--dark-color);
   display: grid;
 }
-.home-watch-container {
+.home-watch-body-container {
   width: 100%;
   height: 110%;
 }
@@ -262,7 +262,7 @@ input[type="submit"]:hover {
 /* =============== MEDIA QUERIES ======= */
 
 @media screen and (max-width: 768px) {
-  .container {
+  .body-container {
     padding: 0 1rem;
   }
 }
@@ -346,7 +346,7 @@ input[type="submit"]:hover {
   .section-5 {
     padding: 1rem 0;
   }
-  .section-5 .subscribe-container {
+  .section-5 .subscribe-body-container {
     display: flex;
     align-items: center;
   }

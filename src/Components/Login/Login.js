@@ -3,25 +3,25 @@ import "./Login.css";
 
 class Login extends React.Component {
 
-    componentDidMount() {
-        const container = document.getElementById('container');
-        const registerBtn = document.getElementById('register');
-        const loginBtn = document.getElementById('login');
+  componentDidMount() {
+    const container = document.getElementById('container');
+    const registerBtn = document.getElementById('register');
+    const loginBtn = document.getElementById('login');
 
-        registerBtn.addEventListener('click', () => {
-            container.classList.add("active");
-        });
+    registerBtn.addEventListener('click', () => {
+      container.classList.add("active");
+    });
 
-        loginBtn.addEventListener('click', () => {
-            container.classList.remove("active");
-        });
-    }
+    loginBtn.addEventListener('click', () => {
+      container.classList.remove("active");
+    });
+  }
 
 
   render() {
     return (
-      <div className="container" id="container">
-        <div className="form-container sign-up">
+      <div className="logincontainer" id="container">
+        <div className="form-logincontainer sign-up">
           <form>
             <h1>Create Account</h1>
             <div className="social-icons">

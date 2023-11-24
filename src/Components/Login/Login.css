@@ -8,17 +8,19 @@
 }
 
 body{
-    background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    background-color: var(--white-color);
 }
 
-.container{
-    background-color: #fff;
+.logincontainer{
+    background-color: #000000;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -28,25 +30,25 @@ body{
     min-height: 480px;
 }
 
-.container p{
+.logincontainer p{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-.container span{
+.logincontainer span{
     font-size: 12px;
 }
 
-.container a{
+.logincontainer a{
     color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
-.container button{
+.logincontainer button{
     background-color: #512da8;
     color: #fff;
     font-size: 12px;
@@ -60,12 +62,12 @@ body{
     cursor: pointer;
 }
 
-.container button.hidden{
+.logincontainer button.hidden{
     background-color: transparent;
     border-color: #fff;
 }
 
-.container form{
+.logincontainer form{
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -75,7 +77,7 @@ body{
     height: 100%;
 }
 
-.container input{
+.logincontainer input{
     background-color: #eee;
     border: none;
     margin: 8px 0;
