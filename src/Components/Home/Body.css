@@ -69,6 +69,7 @@ body {
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
 }
 .slogan .company-slogan {
   background: -webkit-linear-gradient(
@@ -76,9 +77,11 @@ body {
     var(--primary-color-alt),
     var(--primary-color)
   );
+  text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 1rem;
+  margin-left: 4rem;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.8rem;
@@ -92,6 +95,7 @@ body {
   margin: 1rem 0;
   display: grid;
 }
+
 .offer img {
   background-color: rgba(0, 0, 0, 0);
   padding: 2rem 0;
