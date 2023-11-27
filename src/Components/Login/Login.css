@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app-container {
+    height: 100vh;
+    background: linear-gradient(45deg, #000, #FFD700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+  }
+
+.form-container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-icons button {
+    background-color: #512da8; /* Adjust the color as needed */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-up-button,
+.sign-in-button,
+.forgot-password-button {
+    background-color: #512da8; /* Adjust the color as needed */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Additional styling for specific elements */
+.form-container span,
+.form-container a {
+    font-size: 13px;
+    margin: 15px 0 10px;
+}
+
+.form-container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container button {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form-container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container button {
+    background-color: #ffc107; /* Change to your desired color, e.g., yellow (#ffc107) */
+    color: #000; /* Change to your desired text color, e.g., black (#000) */
+    border: 1px solid #000; /* Add a border for better visibility, adjust color as needed */
+    /* Add any additional styles you need */
+  }
+  
+  .container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff; /* Change to your desired text color for hidden buttons, e.g., white (#fff) */
+  }

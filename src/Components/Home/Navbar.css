@@ -23,18 +23,21 @@
 /* ================= BASE ==================== */
 li {
   list-style: none;
-
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   width: 100%;
   height: auto;
 }
+
 .bx {
   font-size: 2.5rem;
 }
+
 .navbar-container {
   padding: 0 2rem;
   margin: auto;
@@ -45,16 +48,35 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   background-color: rgb(6, 6, 6);
+  padding-top: 0px; /* Adjust this value based on your header height */
 }
 
 /* ================= HEADER ================ */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--dark-color);
-  padding: 1rem 2rem ;
+  padding: 1rem 2rem;
+  z-index: 1001; /* Increase the z-index */
 }
+
+/* Add a background color to cover the content behind the fixed header */
+header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-color);
+  z-index: -1;
+}
+
 .company-logo {
   font-size: 2.5rem;
   background: -webkit-linear-gradient(
@@ -65,14 +87,16 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .nav-items {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 .nav-item {
   margin: 0 3rem;
 }
+
 .nav-link {
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
@@ -84,6 +108,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .nav-link::before {
   content: "";
   background: linear-gradient(var(--primary-color), var(--primary-color-alt));
@@ -96,13 +121,16 @@ header {
   transform-origin: bottom right;
   transition: transform 150ms;
 }
+
 .nav-link:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 .menu-toggle {
   display: none;
 }
+
 .bx-menu,
 .bx-x {
   cursor: pointer;
@@ -115,3 +143,5 @@ header {
   -webkit-text-fill-color: transparent;
   display: none !important;
 }
+
+/* ... (your existing styles) ... */
