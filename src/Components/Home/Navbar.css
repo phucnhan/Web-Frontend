@@ -43,15 +43,12 @@ img {
   margin: auto;
 }
 
-/* -- BODY -- */
-body {
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  background-image: url(image/background-clock-with-roman-numerals.jpg); 
-  background-size: cover;
-  padding-top: 0px; /* Adjust this value based on your header height */
-}
 
+
+.navbar-container{
+  background-color: black;
+  height: 150px;
+}
 /* ================= HEADER ================ */
 header {
   position: fixed;

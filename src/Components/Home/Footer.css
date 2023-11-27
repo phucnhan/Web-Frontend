@@ -21,7 +21,7 @@
 
 /* =============== FOOTER =============== */
 .top-footer {
-  background-color: var(--second-color);
+  background-color: black;
   display: flex;
   flex-direction: column;
 }
