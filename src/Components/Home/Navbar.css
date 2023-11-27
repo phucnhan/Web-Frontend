@@ -47,8 +47,8 @@ img {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  background-image: "href='/stories/virtuemart/vendor/background-clock-with-roman-numerals.png'"; 
-    background-size: cover;
+  background-image: url(image/background-clock-with-roman-numerals.jpg); 
+  background-size: cover;
   padding-top: 0px; /* Adjust this value based on your header height */
 }
 
@@ -77,25 +77,16 @@ header::before {
   background-color: var(--dark-color);
   z-index: -1;
 }
-
 .company-logo {
-  font-size: 2.5rem;
-  letter-spacing: 0.05rem;
-  position: relative;
-  background: -webkit-linear-gradient(#b2ae96, #43413e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
   width: 60px;
   height: 60px;
+  background-image: url('image/logo.ico');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 0 5px #808080;
-  clip-path: circle(100%);
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  text-indent: -9999px;
 }
 
 

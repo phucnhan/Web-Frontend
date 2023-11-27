@@ -43,12 +43,12 @@ img {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  background-color: black
+  background-color: black;
 }
 
 /* -------- HOME SECTION -------------- */
 .section-1 {
-  background-color: var(--dark-color);
+  background-color: rgba(0, 0, 0, 0.1);
   display: grid;
 }
 .home-watch-body-container {
@@ -86,27 +86,41 @@ body {
   margin: 2rem 0;
 }
 .offer {
-  background-color: var(--dark-color);
+  background-color: rgba(0, 0, 0, 0.25);
   margin: 1rem 0;
   display: grid;
 }
 .offer img {
-  background-color: var(--dark-color);
+  background-color: rgba(0, 0, 0, 0);
   padding: 2rem 0;
   width: 50%;
   height: auto;
   margin: auto;
 }
-.offer-1 img {
-  background-color: var(--dark-color);
+.offer-1-img {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+img.offer-img.offer-1-img {
+  background-color: rgba(0, 0, 0, 0);
   padding: 3rem 0;
 }
 .offer-description {
-  background-color: var(--white-color-alt);
+  background-color: rgba(0, 0, 0, 0);
   padding: 0 1rem;
+  text-align: center;
+}
+h2.offer-title{
+  text-align: center;
+}
+p.offer-hook{
+  text-align: center;
 }
 .offer-description .offer-title {
-  color: var(--second-color);
+  background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.8rem;
   font-weight: 400;
   padding: 1.5rem 0 0.5rem 0;
@@ -119,8 +133,10 @@ body {
   cursor: pointer;
   color: var(--second-color-alt);
   font-size: 1.1rem;
-  display: grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 2rem 0 1rem 0;
   width: 10rem;
   height: 3rem;
@@ -137,6 +153,7 @@ body {
     var(--primary-color)
   );
 }
+
 /* -------- PRODUCT SECTION ----------- */
 .section-3 {
   display: grid;
@@ -147,7 +164,7 @@ body {
 }
 .product {
   cursor: pointer;
-  background-color: var(--white-color-alt);
+  background-color: rgba(0, 0, 0, 0);
   position: relative;
 }
 .product::before {

@@ -9,8 +9,7 @@
 
 .app-container {
     height: 100vh;
-    background: linear-gradient(45deg, #000, #FFD700);
-    display: flex;
+    background-color: #000;
     align-items: center;
     justify-content: center;
   }
@@ -23,29 +22,36 @@
 
 .login-container {
     flex-grow: 1;
-    background-color: #fff;
+    background-image: url(background-clock-with-roman-numerals.jpg); 
+    background-size: cover;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     overflow: hidden;
     width: 100%;
     max-width: 100%;
     min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
 .form-container {
-    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     height: 100%;
+    width: 1000px;
     overflow-y: auto;
+    border-radius: 0px;
 }
 
 .form-container h1 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .social-icons button {

@@ -1,4 +1,3 @@
-// Navbar.js
 import React from "react";
 import "./Navbar.css";
 
@@ -7,7 +6,8 @@ class Navbar extends React.Component {
     return (
       <div>
         <div className="navbar-container">
-          <div className="company-logo">NB</div>
+          <div className="company-logo">
+          </div>
           <nav className="navbar">
             <ul className="nav-items">
               <li className="nav-item">
