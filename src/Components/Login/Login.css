@@ -15,12 +15,19 @@
     justify-content: center;
   }
   
-  .login-container {
+  .login-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login-container {
+    flex-grow: 1;
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     overflow: hidden;
-    width: 768px;
+    width: 100%;
     max-width: 100%;
     min-height: 480px;
   }
@@ -101,14 +108,16 @@
 }
 
 .container button {
-    background-color: #ffc107; /* Change to your desired color, e.g., yellow (#ffc107) */
-    color: #000; /* Change to your desired text color, e.g., black (#000) */
-    border: 1px solid #000; /* Add a border for better visibility, adjust color as needed */
-    /* Add any additional styles you need */
+    background-color: #ffc107;
+    color: #000;
+    border: 1px solid #000; 
   }
   
   .container button.hidden {
     background-color: transparent;
     border-color: #fff;
-    color: #fff; /* Change to your desired text color for hidden buttons, e.g., white (#fff) */
+    color: #fff;
   }
+  div {
+    display: block;
+}

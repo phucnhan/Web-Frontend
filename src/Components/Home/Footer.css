@@ -80,7 +80,6 @@
 .top-footer {
   flex-direction: row;
   justify-content: space-around;
-  padding-bottom: 8rem;
   padding-top: 2rem;
 }
 .footer-title {

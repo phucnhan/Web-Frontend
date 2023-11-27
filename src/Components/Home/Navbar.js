@@ -7,14 +7,14 @@ class Navbar extends React.Component {
     return (
       <div>
         <div className="navbar-container">
-          <div className="company-logo">D</div>
+          <div className="company-logo">NB</div>
           <nav className="navbar">
             <ul className="nav-items">
               <li className="nav-item">
                 <button className="nav-link">HOME</button>
               </li>
               <li className="nav-item">
-                <button className="nav-link">OFFER</button>
+                <button className="nav-link">ABOUT</button>
               </li>
               <li className="nav-item">
                 <button className="nav-link">SHOP</button>
