@@ -1,0 +1,102 @@
+/* About.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about-container {
+  flex-grow: 1;
+  border-radius: 100px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto; 
+  padding: 20px; 
+}
+
+.row {
+  display: flex;
+}
+
+.about_img {
+  text-align: center;
+  align-items: center;
+}
+
+.about_img img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.titlepage {
+  text-align: center;
+}
+
+.titlepage h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.titlepage p {
+  color: #eee;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.li {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  padding-inline-start: 40px;
+  margin-top: 20px;
+}
+
+.read-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.read-more-button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+
+.about-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
