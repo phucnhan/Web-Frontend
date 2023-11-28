@@ -32,7 +32,7 @@ const About = () => {
                                 <p>Explore our collection and find the perfect clock to adorn your home or office. Time is of the essence, and we're here to make it beautiful.</p>
 
                                 <div className="read-more-container">
-                                    <button className="read-more" onClick={handleNavigateHome}>Read More</button>
+                                    <button className="read-more-button" onClick={handleNavigateHome}>Read More</button>
                                 </div>
                             </div>
                         </div>

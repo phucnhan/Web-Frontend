@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import "./Navbar.css";
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
   render() {
@@ -9,28 +10,29 @@ class Navbar extends React.Component {
       <div>
         <div className="navbar-container">
           <div className="company-logo">
+            {/* Your company logo */}
           </div>
           <nav className="navbar">
             <ul className="nav-items">
               <li className="nav-item">
-                <button className="nav-link">HOME</button>
+                <Link to="/home">HOME</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link">ABOUT</button>
+                <Link to="/about">ABOUT</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link">SHOP</button>
+                <Link to="/shop">SHOP</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link">CONTACT</button>
+                <Link to="/contact">CONTACT</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link">
+                <Link to="/cart">
                   <FontAwesomeIcon icon={faShoppingCart} style={{ color: 'var(--primary-color-alt)' }} />
-                </button>
+                </Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link">LOGIN</button>
+                <Link to="/">LOGIN</Link>
               </li>
             </ul>
           </nav>
