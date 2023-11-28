@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Body from './Body'
 
-class Shop extends React.Component {
+class Home extends React.Component {
     render() {
         return (
             <div>
@@ -17,4 +17,4 @@ class Shop extends React.Component {
     }
 }
 
-export default Shop;
+export default Home;
