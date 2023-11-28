@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import "./Navbar.css";
 
 class Navbar extends React.Component {
@@ -21,6 +23,14 @@ class Navbar extends React.Component {
               </li>
               <li className="nav-item">
                 <button className="nav-link">CONTACT</button>
+              </li>
+              <li className="nav-item">
+                <button className="nav-link">
+                  <FontAwesomeIcon icon={faShoppingCart} style={{ color: 'var(--primary-color-alt)' }} />
+                </button>
+              </li>
+              <li className="nav-item">
+                <button className="nav-link">LOGIN</button>
               </li>
             </ul>
           </nav>
