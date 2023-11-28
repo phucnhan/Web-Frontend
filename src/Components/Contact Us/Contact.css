@@ -1,0 +1,167 @@
+/* Contact.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+    --font-size: 12pt;
+    --font-face: 'Spartan';
+    --form-bg: #f8f4e5;
+    --form-border: #f45702;
+    --form-shadow: #dfae4b;
+    --form-focus: #6bd4b1;
+    --font-color: #2A293E;
+}
+
+/* Reset */
+.contact-us * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+.contact-us.body {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: var(--font-size);
+    font-family: var(--font-face);
+    color: var(--font-color);
+}
+
+/* Contact Frame Styles */
+.contact-frame {
+    text-align: center;
+    background: fixed;
+    border: 4px; /* Set border color to the desired highlight color */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+}
+
+/* Header Styles */
+.contact-us h2 {
+    font-size: 20pt;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Contact Us Styles */
+.contact-us {
+    padding: 50px 100px;
+    border-top: 10px solid var(--form-border);
+}
+
+/* Form Styles */
+.contact-us label,
+.contact-us input,
+.contact-us textarea {
+    display: block;
+    width: 100%;
+    font-size: var(--font-size);
+    line-height: calc(var(--font-size) * 2);
+    font-family: var(--font-face);
+    color: white;
+    width: 500px;
+    display: inline-block;
+    
+}
+
+.contact-us input {
+    margin-bottom: calc(var(--font-size) * 2);
+    width: 70%; /* Adjust the width as needed */
+    padding: 0.5rem; /* Adjust the padding as needed */
+    display: block;
+    font-size: var(--font-size);
+    line-height: calc(var(--font-size) * 2);
+    font-family: var(--font-face);
+    color: white;
+    width: 500px;
+    display: inline-block;
+    
+}
+input#spamProtection {
+    width: 500px;
+    display: inline-block;
+}
+
+
+.contact-us h3 {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: calc(var(--font-size) * 2);
+    font-style: italic;
+    margin: 0 0 .5em 0;
+    color: white;
+}
+
+.contact-us span {
+    font-size: 8pt;
+}
+
+.contact-us em {
+    color: var(--form-border);
+    font-weight: bold;
+}
+
+.contact-us input,
+.contact-us textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    background: var(--form-bg);
+    padding-left: 5px;
+    outline: none;
+}
+
+.contact-input.input[type="text"] {
+    padding: 0 1rem;
+    width: 15rem;
+}
+
+.contact-input.input[type="submit"] {
+    width: 10rem;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    border: 1px solid var(--form-focus);
+}
+
+.contact-us textarea {
+    resize: none;
+}
+
+/* Button Styles */
+.contact-us button {
+    display: inline-block;
+    float: right;
+    line-height: calc(var(--font-size) * 2);
+    padding: 0 20px;
+    border: none;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+}
+
+/* Selection Styles */
+::selection {
+    background: rgb(255, 199, 184);
+}
+
+/* Autofill Styles */
+.contact-us input:-webkit-autofill,
+.contact-us input:-webkit-autofill:hover,
+.contact-us input:-webkit-autofill:focus,
+.contact-us textarea:-webkit-autofill,
+.contact-us textarea:-webkit-autofill:hover,
+.contact-us textarea:-webkit-autofill:focus {
+    border: 1px solid var(--form-focus);
+    -webkit-text-fill-color: var(--font-color);
+    -webkit-box-shadow: 0 0 0px 1000px var(--form-bg) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
