@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import './Contact.css';
+import Navbar from '../Home/Navbar';
+import Footer from '../Home/Footer';
 
 class Contact extends React.Component {
   render() {
@@ -36,9 +38,10 @@ class Contact extends React.Component {
       };
 
       return (
-        <div className="contact-frame">
-          <h2>Contact Us</h2>
+        <div>
+          <Navbar />
           <div className="contact-us">
+            <h2>Contact Us</h2>
             <form action="#" onSubmit={handleSubmit}>
               <label htmlFor="customerName">
                 NAME
@@ -106,7 +109,7 @@ class Contact extends React.Component {
                 <em>&#x2a;</em>
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?</span>
               </label>
-              <input 
+              <input
                 type="text"
                 id="spamProtection"
                 name="spamProtection"
@@ -114,12 +117,13 @@ class Contact extends React.Component {
                 value={formData.spamProtection}
               />
 
-  
+
             </form>
             <button type="submit" id="customerOrder">
-                SUBMIT
-              </button>
+              SUBMIT
+            </button>
           </div>
+          <Footer />
         </div>
       );
     };

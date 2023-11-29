@@ -13,10 +13,6 @@
 }
 
 /* Reset */
-.contact-us * {
-    margin: 0;
-    padding: 0;
-}
 
 /* Body Styles */
 .contact-us.body {
@@ -32,13 +28,6 @@
 }
 
 /* Contact Frame Styles */
-.contact-frame {
-    text-align: center;
-    background: fixed;
-    border: 4px; /* Set border color to the desired highlight color */
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
-}
 
 /* Header Styles */
 .contact-us h2 {
@@ -49,9 +38,13 @@
 
 /* Contact Us Styles */
 .contact-us {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     padding: 50px 100px;
-    border-top: 10px solid var(--form-border);
-}
+  }
+
+
 
 /* Form Styles */
 .contact-us label,
