@@ -1,0 +1,110 @@
+/* Cart.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart {
+    display: grid;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px 10%;
+    color: white; /* Set the default text color to white */
+}
+
+.cart .cart-table table,
+.cart .summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.cart .cart-table th,
+.cart .cart-table td,
+.cart .summary-table th,
+.cart .summary-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+    color: white; /* Set the text color to white */
+}
+
+.cart .cart-table th,
+.cart .summary-table th {
+    background-color: #453535;
+}
+
+.cart .cart-table img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 1rem;
+}
+
+.cart .cart-table input {
+    width: 40px;
+}
+
+.cart .cart-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.cart .cart-btn:hover {
+    background-color: #2980b9;
+}
+
+.cart .remove-btn {
+    background-color: #e74c3c;
+    color: white; /* Set the text color to white */
+}
+
+.cart .remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.cart .summary-table {
+    flex: 1;
+}
+
+.cart .checkout-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+.product{
+flex-grow: 1;
+flex-shrink: 0;
+flex-basis: calc(20% - 2rem);
+box-sizing: border-box;
+position: relative;
+margin-bottom: 0rem;
+}
+
+.cart .cart-table .product {
+    display: flex;
+    align-items: center;
+    color: white; /* Set the text color to white */
+}
+
+.cart .cart-table .product-image {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 1rem;
+}
+
+.cart .cart-table .product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart .cart-table .product-title {
+    font-weight: bold;
+}
+
+.cart .cart-table .product-description {
+    color: #777;
+}

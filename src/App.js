@@ -6,6 +6,7 @@ import './App.css';
 import About from './Components/About/About';
 import Contact from './Components/Contact Us/Contact';
 import Shop from './Components/Shop/Shop';
+import Cart from './Components/Cart/Cart';
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/About' element={<div className="app-container-about"><About /></div>} />
         <Route path='/Contact' element={<div className="app-container-about"><Contact /></div>} />
         <Route path="/Shop" element={<Shop />} />
+        <Route path='/Cart' element={<div className="app-container-about"><Cart /></div>} />
       </Routes>
     </Router>
   );
