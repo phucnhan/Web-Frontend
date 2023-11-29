@@ -1,45 +1,66 @@
-/* Product.css */
+.product {
+    margin-top: 90px;
+}
+
+
+
+.blu {
+    color: #03cafc;
+    text-transform: initial;
+}
+
+.product .product_box {
+    text-align: center;
+    border: #555556 solid 1px;
+    border-radius: 2px;
+    padding: 120px 0px 30px 0px;
+    margin-bottom: 30px;
+}
+
+.product .product_box figure {
+    margin: 0;
+}
+
+.product .product_box h3 {
+    color: #100d0d;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 70px 0px 9px 0px;
+}
+
+.product .product_box p {
+    color: #2a2a2c;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.product .read_more {
+    border: #1a1a1a solid 2px;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    margin-top: 44px;
+}
 
 .section-3 {
-    gap: 2rem; /* Increased gap between rows */
+    gap: 5rem;
   }
-  
-  .product-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .product {
-    flex: 1 0 calc(20% - 2rem); /* 20% width with 2rem spacing */
-    box-sizing: border-box;
-    position: relative;
-    margin-bottom: 2rem; /* Increased spacing between products */
-  }
-  
-  .product img {
-    width: 100%; /* Make sure the image takes the full width of the product container */
-  }
-  
   .product::before {
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 300ms;
   }
-  
   .product:hover::before {
     transform: scaleY(1);
     transform-origin: top;
     transition: transform 300ms;
   }
-  
   .product_add_cart {
     transform: scaleY(0);
     transform-origin: bottom;
   }
-  
   .product:hover .product_add_cart {
     transform: translate(-50%, -50%) scaleY(1);
     transform-origin: top;
   }
-  
