@@ -47,7 +47,8 @@ img {
 
 .navbar-container{
   background-color: black;
-  height: 150px;
+  height: 165px;
+  padding-top: 30px;
 }
 /* ================= HEADER ================ */
 header {
@@ -75,8 +76,8 @@ header::before {
   z-index: -1;
 }
 .company-logo {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   background-image: url('image/logo.ico');
   background-size: cover;
   background-position: center;
