@@ -22,7 +22,7 @@
   overflow: hidden;
   width: 100%;
   max-width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -61,7 +61,7 @@
   line-height: 1.6;
 }
 
-.li {
+.titlepage li {
   color: #eee;
   display: block;
   list-style-type: disc;

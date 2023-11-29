@@ -146,6 +146,10 @@ input#spamProtection {
     border-bottom: 2px solid transparent;
     outline: none;
 }
+.contact-us button:hover{
+    background-color: #0056b3;
+    
+}
 
 /* Selection Styles */
 ::selection {
