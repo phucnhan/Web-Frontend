@@ -5,13 +5,43 @@ import Navbar from "../Home/Navbar";
 import Footer from "../Home/Footer";
 
 class Cart extends React.Component {
+    state = {
+        cartItems: [
+            // Sample data, you may replace it with your actual cart items
+            { id: 1, name: "Anne Klein Watch", price: 150.0, quantity: 1 },
+            { id: 2, name: "Another Watch", price: 120.0, quantity: 2 },
+            { id: 3, name: "Third Watch", price: 180.0, quantity: 1 },
+        ],
+    };
+
+    removeProduct = (productId) => {
+        this.setState((prevState) => ({
+            cartItems: prevState.cartItems.filter((item) => item.id !== productId),
+        }));
+    };
+
+    updateQuantity = (productId, newQuantity) => {
+        this.setState((prevState) => ({
+            cartItems: prevState.cartItems.map((item) =>
+                item.id === productId ? { ...item, quantity: newQuantity } : item
+            ),
+        }));
+    };
+
+    checkout = () => {
+        // Implement logic for the checkout process
+        // Redirect to a checkout page, show a confirmation message, or perform other necessary actions
+        alert("Checkout functionality will be implemented here.");
+    };
+
     render() {
+        const { cartItems } = this.state;
+
         return (
             <div>
                 <Navbar />
                 <section className="cart">
-                <h2>CART</h2>
-
+                    <h2>CART</h2>
                     <div className="cart-table">
                         <table>
                             <thead>
@@ -24,79 +54,41 @@ class Cart extends React.Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    {/* Product 1 */}
-                                    <td className="product">
-                                        <img
-                                            src="stories/virtuemart/category/image_category_2.png"
-                                            alt="Product 1"
-                                            className="product-image"
-                                        />
-                                        <div className="product-details">
-                                            <h2 className="product-title">Anne Klein Watch</h2>
-                                            <p className="product-description">
-                                                Rose Gold-Tone Watch with Swarovski Crystals and Leather Band...
-                                            </p>
-                                        </div>
-                                    </td>
-                                    <td>&euro; 150.00</td>
-                                    <td>
-                                        <input type="number" defaultValue={1} min={1} />
-                                    </td>
-                                    <td>&euro; 150.00</td>
-                                    <td>
-                                        <button className="cart-btn remove-btn">Remove</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    {/* Product 2 */}
-                                    <td className="product">
-                                        <img
-                                            src="stories/virtuemart/category/image_category_3.png"
-                                            alt="Product 2"
-                                            className="product-image"
-                                        />
-                                        <div className="product-details">
-                                            <h2 className="product-title">Another Watch</h2>
-                                            <p className="product-description">
-                                                Description for another watch...
-                                            </p>
-                                        </div>
-                                    </td>
-                                    <td>&euro; 120.00</td>
-                                    <td>
-                                        <input type="number" defaultValue={2} min={1} />
-                                    </td>
-                                    <td>&euro; 240.00</td>
-                                    <td>
-                                        <button className="cart-btn remove-btn">Remove</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    {/* Product 3 */}
-                                    <td className="product">
-                                        <img
-                                            src="stories/virtuemart/category/image_category_4.png"
-                                            alt="Product 3"
-                                            className="product-image"
-                                        />
-                                        <div className="product-details">
-                                            <h2 className="product-title">Third Watch</h2>
-                                            <p className="product-description">
-                                                Description for the third watch...
-                                            </p>
-                                        </div>
-                                    </td>
-                                    <td>&euro; 180.00</td>
-                                    <td>
-                                        <input type="number" defaultValue={1} min={1} />
-                                    </td>
-                                    <td>&euro; 180.00</td>
-                                    <td>
-                                        <button className="cart-btn remove-btn">Remove</button>
-                                    </td>
-                                </tr>
-                                {/* Add more rows for additional products if needed */}
+                                {cartItems.map((product) => (
+                                    <tr key={product.id}>
+                                        <td className="product">
+                                            <img
+                                                src={`stories/virtuemart/category/image_category_${product.id}.png`}
+                                                alt={product.name}
+                                                className="product-image"
+                                            />
+                                            <div className="product-details">
+                                                <h2 className="product-title">{product.name}</h2>
+                                                {/* Additional product details */}
+                                            </div>
+                                        </td>
+                                        <td>&euro; {product.price.toFixed(2)}</td>
+                                        <td>
+                                            <input
+                                                type="number"
+                                                value={product.quantity}
+                                                onChange={(e) =>
+                                                    this.updateQuantity(product.id, e.target.value)
+                                                }
+                                                min={1}
+                                            />
+                                        </td>
+                                        <td>&euro; {(product.price * product.quantity).toFixed(2)}</td>
+                                        <td>
+                                            <button
+                                                className="cart-btn remove-btn"
+                                                onClick={() => this.removeProduct(product.id)}
+                                            >
+                                                Remove
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
@@ -105,15 +97,24 @@ class Cart extends React.Component {
                             <tbody>
                                 <tr>
                                     <td>Total Items:</td>
-                                    <td>4</td>
+                                    <td>{cartItems.length}</td>
                                 </tr>
                                 <tr>
                                     <td>Total Price:</td>
-                                    <td>&euro; 570.00</td>
+                                    <td>
+                                        &euro;{" "}
+                                        {cartItems.reduce(
+                                            (total, product) =>
+                                                total + product.price * product.quantity,
+                                            0
+                                        ).toFixed(2)}
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <button className="cart-btn checkout-btn">CHECKOUT</button>
+                        <button className="cart-btn checkout-btn" onClick={this.checkout}>
+                            CHECKOUT
+                        </button>
                     </div>
                 </section>
                 <Footer />
