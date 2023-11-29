@@ -1,0 +1,45 @@
+/* Product.css */
+
+.section-3 {
+    gap: 2rem; /* Increased gap between rows */
+  }
+  
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product {
+    flex: 1 0 calc(20% - 2rem); /* 20% width with 2rem spacing */
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 2rem; /* Increased spacing between products */
+  }
+  
+  .product img {
+    width: 100%; /* Make sure the image takes the full width of the product container */
+  }
+  
+  .product::before {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 300ms;
+  }
+  
+  .product:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 300ms;
+  }
+  
+  .product_add_cart {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  
+  .product:hover .product_add_cart {
+    transform: translate(-50%, -50%) scaleY(1);
+    transform-origin: top;
+  }
+  
