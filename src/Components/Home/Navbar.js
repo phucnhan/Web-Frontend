@@ -9,30 +9,30 @@ class Navbar extends React.Component {
     return (
       <div>
         <div className="navbar-container">
-          <Link to="/home" className="company-logo">
+          <div className="company-logo">
             {/* Your company logo */}
-          </Link>
+          </div>
           <nav className="navbar">
             <ul className="nav-items">
-              <li className="nav-item">
+              <li className="nav-link">
                 <Link to="/home">HOME</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-link">
                 <Link to="/about">ABOUT</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-link">
                 <Link to="/shop">SHOP</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-link">
                 <Link to="/contact">CONTACT</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-link">
                 <Link to="/cart">
                   <FontAwesomeIcon icon={faShoppingCart} style={{ color: 'var(--primary-color-alt)' }} />
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/">LOGIN</Link>
+              <li className="nav-link">
+                <Link to="/Login">LOGIN</Link>
               </li>
             </ul>
           </nav>
