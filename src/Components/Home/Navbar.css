@@ -94,7 +94,7 @@ header::before {
   justify-content: flex-end;
 }
 
-.nav-item {
+.nav-link {
   margin: 0 3rem;
 }
 

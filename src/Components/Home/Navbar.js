@@ -32,7 +32,7 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li className="nav-link">
-                <Link to="/Login">LOGIN</Link>
+                <Link to="/login">LOGIN</Link>
               </li>
             </ul>
           </nav>
