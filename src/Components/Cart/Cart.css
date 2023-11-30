@@ -81,13 +81,15 @@ flex-shrink: 0;
 flex-basis: calc(20% - 2rem);
 box-sizing: border-box;
 position: relative;
-margin-bottom: 0rem;
+margin-bottom: 0rem; 
 }
 
 .cart .cart-table .product {
     display: flex;
     align-items: center;
     color: white; /* Set the text color to white */
+    display: table-cell
+    
 }
 
 .cart .cart-table .product-image {
