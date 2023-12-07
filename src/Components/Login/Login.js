@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGooglePlusG, faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Footer from "../Home/Footer";
-
+import Navbar from "../Home/Navbar";
 library.add(faGooglePlusG, faFacebookF, faGithub, faLinkedinIn);
 
 class Login extends React.Component {
@@ -55,7 +55,7 @@ class Login extends React.Component {
     render() {
         return (
             <div className="login-page">
-                {/* Your existing code for Navbar */}
+                <Navbar />
 
                 <div className="login-container" id="container">
                     <div className="form-container sign-up">
