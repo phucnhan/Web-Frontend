@@ -30,10 +30,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Use ProtectedRoute for routes that require authentication */}
         <Route
           path="/"
-          element={<div className="app-container"><ProtectedRoute element={<Home />} /></div>}
+          element={<div className="app-container"><Home /></div>}
+        />
+        <Route
+          path="/home"
+          element={<div className="app-container"><Home /></div>}
         />
         <Route path="/Login" element={<div className="app-container-login"><Login /></div>} />
         <Route path='/About' element={<div className="app-container-about"><About /></div>} />
