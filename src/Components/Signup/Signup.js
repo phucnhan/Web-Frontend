@@ -72,7 +72,6 @@ const Signup = () => {
                 <div className="form-container sign-up">
                     <form>
                         <h1>Create Account</h1>
-                        <span>or use your email for registration</span>
                         <input
                             type="text"
                             name="name"

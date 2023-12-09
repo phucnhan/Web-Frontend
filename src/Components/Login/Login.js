@@ -74,7 +74,6 @@ const Login = () => {
                 <div className="form-container sign-in">
                     <form>
                         <h1>Sign In</h1>
-                        <span>or use your email password</span>
                         <input
                             type="email"
                             name="email"
