@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
+import Signup from './Components/Signup/Signup';
 import './App.css';
 import About from './Components/About/About';
 import Contact from './Components/Contact Us/Contact';
@@ -16,16 +17,14 @@ const isAuthenticated = () => {
   return false; // For demonstration purposes, always redirect to login
 };
 
-// ProtectedRoute component for handling authenticated routes
 const ProtectedRoute = ({ element, path }) => {
   if (isAuthenticated()) {
     return element;
   } else {
     // Redirect to the login page if not authenticated
-    return <Navigate to="/Login" />;
+    return <Navigate to="/Login" replace={true} />;
   }
 };
-
 function App() {
   return (
     <Router>
@@ -38,6 +37,7 @@ function App() {
           path="/home"
           element={<div className="app-container"><Home /></div>}
         />
+        <Route path="/Signup" element={<div className="app-container-login"><Signup /></div>} />
         <Route path="/Login" element={<div className="app-container-login"><Login /></div>} />
         <Route path='/About' element={<div className="app-container-about"><About /></div>} />
         <Route path='/Contact' element={<div className="app-container-about"><Contact /></div>} />

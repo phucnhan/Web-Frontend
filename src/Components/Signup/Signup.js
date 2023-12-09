@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Login.css";
+import "./Signup.css";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGooglePlusG, faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Footer from "../Home/Footer";
@@ -7,74 +7,78 @@ import Navbar from "../Home/Navbar";
 import { Link, Navigate } from 'react-router-dom';
 library.add(faGooglePlusG, faFacebookF, faGithub, faLinkedinIn);
 
-const Login = () => {
-
+const Signup = () => {
     const [formData, setFormData] = useState({
+        name: "",
         email: "",
         password: "",
     });
 
     const [error, setError] = useState(null);
-    const [redirectToHome, setRedirectToHome] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [redirectToLogin, setRedirectToLogin] = useState(false);
 
     const handleInputChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSignIn = async (e) => {
+    const handleSignUp = async (e) => {
         e.preventDefault();
         setError(null);
 
-        const { email, password } = formData;
+        const { name, email, password } = formData;
 
-        // Make sure 'email' and 'password' are provided
-        if (!email || !password) {
-            setError("Email and password are required");
+        if (!name || !email || !password) {
+            setError("Name, email, and password are required");
             return;
         }
 
+        setLoading(true);
+
         try {
-            // Send login data to the backend
-            const response = await fetch("http://localhost:3001/api/login", {
+            const response = await fetch("http://localhost:3001/api/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ email, password }),
+                body: JSON.stringify({ name, email, password }),
             });
 
             const data = await response.json();
 
             if (response.ok) {
-                // Login successful, redirect to the home page or perform any other action
-                console.log("Login successful");
-                // Optionally, you can set a token in the localStorage or session storage
-                // and use it for subsequent requests or to manage user sessions
-                // localStorage.setItem("token", data.token);
-                setRedirectToHome(true);
+                console.log("Registration successful");
+                setRedirectToLogin(true);
             } else {
-                // Login failed, set error message
-                setError(data.message || "Login failed");
+                setError(data.message || "Registration failed");
             }
         } catch (error) {
             console.error("Error:", error);
-            setError("Internal server error during login");
+            setError("Internal server error during registration");
+        } finally {
+            setLoading(false);
         }
     };
 
-    // Redirect to home if login is successful
-    if (redirectToHome) {
-        return <Navigate to="/home" />;
+    // Redirect to login if registration is successful
+    if (redirectToLogin) {
+        return <Navigate to="/login" />;
     }
 
     return (
         <div className="login-page">
             <Navbar />
             <div className="login-container" id="container">
-                <div className="form-container sign-in">
+                <div className="form-container sign-up">
                     <form>
-                        <h1>Sign In</h1>
-                        <span>or use your email password</span>
+                        <h1>Create Account</h1>
+                        <span>or use your email for registration</span>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            onChange={handleInputChange}
+                        />
                         <input
                             type="email"
                             name="email"
@@ -88,13 +92,14 @@ const Login = () => {
                             onChange={handleInputChange}
                         />
                         <button
-                            className="sign-in-button"
-                            onClick={handleSignIn}
+                            className="sign-up-button"
+                            onClick={handleSignUp}
+                            disabled={loading}
                         >
-                            Sign In
+                            {loading ? 'Signing Up...' : 'Sign Up'}
                         </button>
-                        <div className="signup-link">
-                            Don't have an account? <Link to="/Signup">Sign up</Link>
+                        <div className="signin-link">
+                            Already have an account? <Link to="/login">Sign in</Link>
                         </div>
                         {error && <div className="error-message">{error}</div>}
                     </form>
@@ -105,4 +110,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Signup;
