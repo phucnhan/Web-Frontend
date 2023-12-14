@@ -1,10 +1,11 @@
 // Shop.js
 import React from "react";
 
-import Product from "./Product";
+import ProductList from "./ProductList";
 import "./Shop.css";
 import Navbar from "../Home/Navbar";
 import Footer from "../Home/Footer";
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
     return (
@@ -17,10 +18,19 @@ const Shop = () => {
                 </p>
             </div>
             <div className="products">
-                <Product />
+                <ProductList />
             </div>
             <div class="read-more">
                 <a class="read_more" href="#">Read More</a>
+                <li className="nav-link">
+                    <Link to="/addproduct">Insert</Link>
+                </li>
+                <li className="nav-link">
+                    <Link to="/updateproduct">Update</Link>
+                </li>
+                <li className="nav-link">
+                    <Link to="/deleteproduct">Delete</Link>
+                </li>
             </div>
             <Footer />
         </div>

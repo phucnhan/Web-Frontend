@@ -10,7 +10,6 @@ class Navbar extends React.Component {
       <div>
         <div className="navbar-container">
           <div className="company-logo">
-            {/* Your company logo */}
           </div>
           <nav className="navbar">
             <ul className="nav-items">

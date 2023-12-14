@@ -1,0 +1,61 @@
+.insert-page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.update-page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.delete-page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.app-container {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.fform-container form{
+  display: flex;
+}
+
+ .fform-container form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .fform-container form {
+    margin-bottom: 50vh;
+    margin-top: 50vh;
+  }
+  
+  .fform-container label {
+    display: block;
+    margin-bottom: 8px;
+   color: #fff ;
+  }
+  
+  .fform-container form-group input,
+  
+  .fform-container form-group button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .fform-container form-group button:hover {
+    background-color: #45a049;
+  }
+
+  .fform-container textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+

@@ -25,3 +25,48 @@
     height: 30px;
     align-items: center;
   }
+  .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-column {
+    width: 48%; /* Adjust the width as per your layout */
+    margin-right: 2%;
+    float: left;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-group button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Clearfix to clear the float and prevent layout issues */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
