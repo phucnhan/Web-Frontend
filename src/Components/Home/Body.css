@@ -40,6 +40,13 @@ img {
 }
 
 /* -- BODY -- */
+.home-body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-image: url(image/background-clock-with-roman-numerals.jpg); 
+  background-size: cover;
+  padding-top: 0px; /* Adjust this value based on your header height */
+}
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -47,7 +54,6 @@ body {
   background-size: cover;
   padding-top: 0px; /* Adjust this value based on your header height */
 }
-
 /* -------- HOME SECTION -------------- */
 .section-1 {
   background-color: rgba(0, 0, 0, 0.1);
@@ -137,7 +143,7 @@ p.offer-hook{
 }
 .offer-description .cart-btn {
   cursor: pointer;
-  color: var(--second-color-alt);
+  color: black;
   font-size: 1.1rem;
   display: inline-flex;
   align-items: center;
@@ -148,8 +154,8 @@ p.offer-hook{
   height: 3rem;
   background-image: linear-gradient(
     to top,
-    var(--primary-color-alt),
-    var(--primary-color)
+    gray,
+    black
   );
 }
 .offer-description .cart-btn:hover {
@@ -189,13 +195,14 @@ p.offer-hook{
 .product_add_cart {
   color: var(--white-color-alt);
   font-size: 1.2rem;
-  background-color: hsl(9, 94%, 65%);
+  background-color: hsl(0, 2%, 9%);
   padding: 1rem 0.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 300ms, color 300ms, box-shadow 300ms;
+  color: #fff;
 }
 .product_add_cart:hover {
   color: var(--white-color);

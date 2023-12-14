@@ -5,6 +5,11 @@
     flex-direction: column;
     min-height: 100vh;
 }
+.shop-container { 
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
 .titlepage {
     text-align: center;
     padding-bottom: 60px;
@@ -15,6 +20,14 @@
     line-height: 30px;
     font-weight: 400;
     padding-top: 10px;
+}
+
+.shop-page{
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh;
+  background-image: url(../Home/image/background-clock-with-roman-numerals.jpg);
+  background-size: cover;
 }
 
 .read_more{

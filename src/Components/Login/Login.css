@@ -22,7 +22,7 @@
 
 .login-container {
     flex-grow: 1;
-    background-image: url(background-clock-with-roman-numerals.jpg); 
+    background-image: url(../Home/image/background-clock-with-roman-numerals.jpg);
     background-size: cover;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);

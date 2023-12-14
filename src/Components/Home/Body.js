@@ -1,10 +1,11 @@
 import React from "react";
 import "./Body.css";
+import { Link } from "react-router-dom";
 
 class Body extends React.Component {
     render() {
         return (
-            <div>
+            <div className="home-body">
                 <section className="container section-1">
                     <div className="slogan">
                         <h1 className="company-title">WATCH HAVEN DOWNTOWN</h1>
@@ -27,7 +28,11 @@ class Body extends React.Component {
                         <div className="offer-description offer-desc-1">
                             <h2 className="offer-title">Anne Klein</h2>
                             <p className="offer-hook">Rose Gold-Tone Watch with Swarovski Crystals and Leather Band...</p>
-                            <div className="cart-btn">ADD TO CART</div>
+                            <div className="cart-btn">
+                                <li className="nav-link">
+                                    <Link to="/shop">Shop</Link>
+                                </li>
+                            </div>
                         </div>
                     </div>
 
@@ -36,7 +41,11 @@ class Body extends React.Component {
                         <div className="offer-description offer-desc-2">
                             <h2 className="offer-title">Bestdon</h2>
                             <p className="offer-hook">Bestdon Swiss Men's Sports Watch Digital Multifuction Display Time Yellow...</p>
-                            <div className="cart-btn">ADD TO CART</div>
+                            <div className="cart-btn">
+                                <li className="nav-link">
+                                    <Link to="/shop">Shop</Link>
+                                </li>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -44,37 +53,53 @@ class Body extends React.Component {
                 <section className="container section-3">
                     <div className="product product-1">
                         <img src="stories/virtuemart/category/image_category_4.png" alt="computer to sell" className="product-img" />
-                        <span className="product_add_cart">ADD TO CART</span>
+                        <span className="product_add_cart">                            <div className="cart-btn">
+                            <li className="nav-link">
+                                <Link to="/shop">Shop</Link>
+                            </li>
+                        </div></span>
                     </div>
 
                     <div className="product product-2">
                         <img src="stories/virtuemart/category/image_category_5.png" alt="computer to sell" className="product-img" />
-                        <span className="product_add_cart">ADD TO CART</span>
+                        <span className="product_add_cart">                            <div className="cart-btn">
+                            <li className="nav-link">
+                                <Link to="/shop">Shop</Link>
+                            </li>
+                        </div></span>
                     </div>
 
                     <div className="product product-3">
                         <img src="stories/virtuemart/category/image_category_6.png" alt="computer to sell" className="product-img" />
-                        <span className="product_add_cart">ADD TO CART</span>
+                        <span className="product_add_cart">                            <div className="cart-btn">
+                            <li className="nav-link">
+                                <Link to="/shop">Shop</Link>
+                            </li>
+                        </div></span>
                     </div>
 
                     <div className="product product-4">
                         <img src="stories/virtuemart/category/image_category_7.png" alt="computer to sell" className="product-img" />
-                        <span className="product_add_cart">ADD TO CART</span>
+                        <span className="product_add_cart">                            <div className="cart-btn">
+                            <li className="nav-link">
+                                <Link to="/shop">Shop</Link>
+                            </li>
+                        </div></span>
                     </div>
                 </section>
 
                 <section className="container section-4">
                     <div className="sponsor sponsor-1">
-                        <img src="stories/virtuemart/manufacturer/brand_1.png" alt="" />
+                        <Link to="/shop"><img src="stories/virtuemart/manufacturer/brand_1.png" alt="" /></Link>
                     </div>
                     <div className="sponsor sponsor-2">
-                        <img src="stories/virtuemart/manufacturer/brand_2.png" alt="" />
+                        <Link to="/shop"><img src="stories/virtuemart/manufacturer/brand_2.png" alt="" /></Link>
                     </div>
                     <div className="sponsor sponsor-3">
-                        <img src="stories/virtuemart/manufacturer/brand_3.png" alt="" />
+                        <Link to="/shop"><img src="stories/virtuemart/manufacturer/brand_3.png" alt="" /></Link>
                     </div>
                     <div className="sponsor sponsor-4">
-                        <img src="stories/virtuemart/manufacturer/brand_4.png" alt="" />
+                        <Link to="/shop"><img src="stories/virtuemart/manufacturer/brand_4.png" alt="" /></Link>
                     </div>
                 </section>
 
