@@ -7,7 +7,6 @@ import './App.css';
 import About from './Components/About/About';
 import Contact from './Components/Contact Us/Contact';
 import Shop from './Components/Shop/Shop';
-import Cart from './Components/Cart/Cart';
 import AddProductForm from './Components/Shop/AddProductForm';
 import UpdateProductForm from './Components/Shop/UpdateProductForm';
 import DeleteProductForm from './Components/Shop/DeleteProductForm';
@@ -38,7 +37,6 @@ function App() {
         <Route path='/About' element={<div className="app-container-about"><About /></div>} />
         <Route path='/Contact' element={<div className="app-container-about"><Contact /></div>} />
         <Route path="/Shop" element={<div className="app-container"><Shop /></div>} />
-        <Route path='/Cart' element={<div className="app-container-about"><Cart /></div>} />
         <Route path="/addproduct" element={<div className="app-container"><AddProductForm /></div>} />
         <Route path="/updateproduct" element={<div className="app-container"><UpdateProductForm /></div>} />
         <Route path="/deleteproduct" element={<div className="app-container"><DeleteProductForm /></div>} />

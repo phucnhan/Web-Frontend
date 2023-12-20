@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
 
@@ -24,11 +22,6 @@ class Navbar extends React.Component {
               </li>
               <li className="nav-link">
                 <Link to="/contact">CONTACT</Link>
-              </li>
-              <li className="nav-link">
-                <Link to="/cart">
-                  <FontAwesomeIcon icon={faShoppingCart} style={{ color: 'var(--primary-color-alt)' }} />
-                </Link>
               </li>
               <li className="nav-link">
                 <Link to="/login">LOGIN</Link>

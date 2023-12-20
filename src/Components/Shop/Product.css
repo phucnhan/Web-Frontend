@@ -40,7 +40,7 @@ p.product-container .product::before {
 }
 
 .product-container {
-  background-image: url(../Home/image/background-clock-with-roman-numerals.jpg);
+  background-color: rgba(0, 0, 0, 0);
   background-size: cover;
   display: grid;
   place-items: center;
