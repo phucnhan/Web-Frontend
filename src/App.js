@@ -10,6 +10,7 @@ import Shop from './Components/Shop/Shop';
 import AddProductForm from './Components/Shop/AddProductForm';
 import UpdateProductForm from './Components/Shop/UpdateProductForm';
 import DeleteProductForm from './Components/Shop/DeleteProductForm';
+import Payment from './Components/Payment/Payment';
 // Example: A simple authentication check function
 /*const isAuthenticated = () => {
   // Implement your authentication logic here
@@ -40,6 +41,7 @@ function App() {
         <Route path="/addproduct" element={<div className="app-container"><AddProductForm /></div>} />
         <Route path="/updateproduct" element={<div className="app-container"><UpdateProductForm /></div>} />
         <Route path="/deleteproduct" element={<div className="app-container"><DeleteProductForm /></div>} />
+        <Route path="/Payment" element={<div className="app-container"><Payment /></div>} />
       </Routes>
     </Router>
   );

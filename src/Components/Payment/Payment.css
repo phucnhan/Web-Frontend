@@ -1,0 +1,49 @@
+/* Payment.css */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+  }
+  
+  .payment-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white; /* Added line to change text color to white */
+  }
+  
+  .qr-code-section {
+    margin-bottom: 30px;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .payment-form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white; /* Added line to change text color to white */
+  }
+  
+  .payment-form input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .payment-form button:hover {
+    background-color: #45a049;
+  }

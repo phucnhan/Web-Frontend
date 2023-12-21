@@ -2,6 +2,7 @@
 import React from 'react';
 import Footer from '../Home/Footer';
 import './Cart.css';
+import { Link } from 'react-router-dom';
 
 const Cart = ({ cartItems, selectedProduct, updateQuantity, removeProduct, closeCart }) => {
   return (
@@ -77,8 +78,8 @@ const Cart = ({ cartItems, selectedProduct, updateQuantity, removeProduct, close
               </tr>
             </tbody>
           </table>
-          <button className='cart-btn checkout-btn' onClick={() => alert('Checkout functionality will be implemented here.')}>
-            CHECKOUT
+          <button className='cart-btn checkout-btn' onClick={() => alert('Scan QR code to payment')}>
+          <Link to="/Payment">CHECKOUT</Link>
           </button>
           <button className='cart-btn checkout-btn' onClick={closeCart}>
             CLOSE CART
